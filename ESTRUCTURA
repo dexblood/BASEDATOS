@@ -42,11 +42,12 @@ Nombre
 Entidad INSTITUCIONES
 Atributos
 PK	CODINST
+Nombre
 FK	IDDOM
 FK	IDEQUIPO
 FK	IDESP
 FK	IDSUBESP
-Nombre
+
 
 
 Entidad EQUIPOS
@@ -56,6 +57,10 @@ CodigoEquipo
 PRECIOUNITARIO
 CodigoEquipoExt
 
+Entidad EQUIPOSEXTERNOS
+Atributos
+PK	IDEQUIPOEXT
+Descripcion
 
 
 Entidad FACTURAS
@@ -67,15 +72,17 @@ CAE
 FECHA
 Total
 
-Entidad ITEMS
+Entidad FACTURAS-EQUIPOS
 Atributos
 PF	IDITEM
 FK	NUMFAC
 FK	IDEQUIPO
+PRECIO
 
 
 Entidad VENDEDOR
 Atributos
+
 PK	IDVENDEDOR
 
 
@@ -87,7 +94,7 @@ PK	IDDOM
 FK	IDPROV
 FK	IDLOC
 FK	IDCALLE
-Numeracion
+FK 	IDTEL
 Aclaracion
 
 
@@ -99,10 +106,10 @@ Nombre
 
 Entidad LOCALIDADES
 Atributos
-PK	IDLOC
+PK CodPost
 FK	IDPROV
 Nombre
-CodPost
+
 
 
 Entidad CALLES-NUM
